@@ -8,10 +8,10 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.mjs
-    siteTitle: `microCart`,
-    siteTitleAlt: `microCart - pipette control system`,
-    siteHeadline: `microCart - pipette control system`,
-    siteUrl: `https://zach-c-d.github.io/ucart_site/`,
+    siteTitle: `Tiny Tube Bio`,
+    siteTitleAlt: `tinytubebio`,
+    siteHeadline: `pipette control system`,
+    siteUrl: `https://tinytubebio.com/`,
     siteDescription: `A precision pipette control system.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
