@@ -31,8 +31,8 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `microCart - pipette control system`,
-        short_name: `microCart`,
+        name: `Tiny Tube Bio`,
+        short_name: `tinytubebio`,
         description: `A precision pipette control system`,
         start_url: `/`,
         background_color: `#141821`,
