@@ -33,7 +33,20 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
   >
     <div
       sx={{
-        opacity: 0.85,
+        textTransform: `uppercase`,
+        letterSpacing: `wide`,
+        pt: 4,
+        fontSize: [3, 4, 5],
+        fontWeight: `medium`,
+        lineHeight: 1.125,
+        mb: 60,
+      }}
+    >
+      {title}
+    </div>
+    <div
+      sx={{
+        opacity: 1,
         textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
         p: {
           fontSize: [1, 2],
@@ -44,18 +57,6 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       }}
     >
       {children}
-    </div>
-    <div
-      sx={{
-        textTransform: `uppercase`,
-        letterSpacing: `wide`,
-        pt: 4,
-        fontSize: [3, 4, 5],
-        fontWeight: `medium`,
-        lineHeight: 1.125,
-      }}
-    >
-      {title}
     </div>
   </a>
 )
