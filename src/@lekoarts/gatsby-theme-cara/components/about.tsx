@@ -59,7 +59,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
             }}
           >
             <StaticImage
-              src="../images/ncis-pipette.webp"
+              src="../images/csi-vegas.webp"
               sx={{ height: `100%` }}
             ></StaticImage>
             <Text>(CSI:Vegas 2021)</Text>
