@@ -17,6 +17,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       width: `100%`,
       boxShadow: `lg`,
       aspectRatio: `9/6 `,
+      objectFit: `contain`,
       position: `relative`,
       textDecoration: `none`,
       borderRadius: `lg`,

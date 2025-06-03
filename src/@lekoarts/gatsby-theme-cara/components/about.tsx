@@ -19,7 +19,8 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         <AboutMDX />
         <Card
           sx={{
-            // height: `100%`,
+            marginTop: `50px`,
+            marginBottom: `50px`,
             maxWidth: `100%`,
             padding: `1%`,
             background: "linear-gradient(to right, #D4145A 0%, #FBB03B 100%)",
