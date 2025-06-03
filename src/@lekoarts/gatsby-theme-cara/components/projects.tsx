@@ -25,6 +25,7 @@ const Projects = ({
             gridGap: [0, 0, 0, 5],
             gridTemplateColumns: [`1fr`],
             h2: { gridColumn: `-1/1`, color: `white !important` },
+            width: `100%`,
           }}
         >
           <ProjectsMDX />

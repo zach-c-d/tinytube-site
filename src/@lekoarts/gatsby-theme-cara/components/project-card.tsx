@@ -10,31 +10,26 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
   <div
-    href={link}
-    target="_blank"
-    rel="noreferrer noopener"
     sx={{
-      width: `100%`,
       boxShadow: `lg`,
-      aspectRatio: `9/6 `,
-      objectFit: `contain`,
       position: `relative`,
       textDecoration: `none`,
       borderRadius: `lg`,
       px: 4,
       py: 4,
       color: `white`,
-      background: bg || `none`,
-      transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
-      "&:hover": {
-        color: `white !important`,
-        transform: `translateY(-5px)`,
-        boxShadow: `xl`,
-      },
+      background: bg,
+      maxWidth: `100%`,
+      display: `grid`,
+      gridTemplateColumns: `repeat(5, 1fr)`,
+      gridTemplateRows: `repeat(5, 1fr)`,
+      gridColumnGap: `0px`,
+      gridRowGap: `0px`,
     }}
   >
     <div
       sx={{
+        gridArea:` 1 / 1 / 2 / 6`,
         textTransform: `uppercase`,
         letterSpacing: `wide`,
         pt: 4,
@@ -48,7 +43,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     </div>
     <div
       sx={{
-        height: `100%`,
+        gridArea: ` 2 / 1 / 6 / 6`,
         opacity: 1,
         textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
         p: {
