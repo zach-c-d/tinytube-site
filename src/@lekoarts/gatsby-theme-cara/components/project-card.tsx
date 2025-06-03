@@ -1,21 +1,22 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx } from "theme-ui";
 
 type ProjectCardProps = {
-  link: string
-  title: string
-  children: React.ReactNode
-  bg: string
-}
+  link: string;
+  title: string;
+  children: React.ReactNode;
+  bg: string;
+};
 
 const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
-  <a
+  <div
     href={link}
     target="_blank"
     rel="noreferrer noopener"
     sx={{
       width: `100%`,
       boxShadow: `lg`,
+      aspectRatio: `9/6 `,
       position: `relative`,
       textDecoration: `none`,
       borderRadius: `lg`,
@@ -46,6 +47,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     </div>
     <div
       sx={{
+        height: `100%`,
         opacity: 1,
         textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
         p: {
@@ -58,7 +60,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     >
       {children}
     </div>
-  </a>
-)
+  </div>
+);
 
-export default ProjectCard
+export default ProjectCard;

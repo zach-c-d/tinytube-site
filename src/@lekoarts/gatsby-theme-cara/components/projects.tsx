@@ -1,13 +1,19 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import Divider from "../elements/divider"
-import Inner from "../elements/inner"
-import Content from "../elements/content"
-import Svg from "./svg"
-import { UpDown, UpDownWide } from "../styles/animations"
-import ProjectsMDX from "../sections/projects.mdx"
+import { jsx } from "theme-ui";
+import Divider from "../elements/divider";
+import Inner from "../elements/inner";
+import Content from "../elements/content";
+import Svg from "./svg";
+import { UpDown, UpDownWide } from "../styles/animations";
+import ProjectsMDX from "../sections/projects.mdx";
 
-const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
+const Projects = ({
+  offset,
+  factor = 2,
+}: {
+  offset: number;
+  factor?: number;
+}) => (
   <div>
     {/* <Divider
       bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
@@ -31,8 +37,8 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
       </Inner>
     </Content>
     {/* <Divider speed={0.1} offset={offset} factor={factor}> */}
-      {/* <UpDown> */}
-        {/* <Svg icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
+    {/* <UpDown> */}
+    {/* <Svg icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
         <Svg icon="upDown" width={8} color="icon_teal" left="70%" top="20%" />
         <Svg icon="triangle" width={8} stroke color="icon_orange" left="25%" top="5%" />
         <Svg icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />
@@ -53,6 +59,6 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
       <Svg icon="hexa" width={8} stroke color="icon_yellow" left="80%" top="70%" /> */}
     {/* </Divider> */}
   </div>
-)
+);
 
-export default Projects
+export default Projects;
