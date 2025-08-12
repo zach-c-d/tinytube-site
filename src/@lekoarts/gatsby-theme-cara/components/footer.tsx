@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+      Copyright &copy; {new Date().getFullYear()} 1001228889 ONTARIO INC. All rights reserved. 
       <br />
     </Box>
   )

@@ -16,6 +16,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
           sx={{
             position: `relative`,
             height: `full`,
+            marginTop: `50px`,
             svg: { width: `100%`, height: `40vh` },
             path: { animation: waveAnimation(`20s`) },
           }}
